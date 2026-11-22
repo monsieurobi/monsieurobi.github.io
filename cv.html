@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CV — Aige-Clei OBI MBOUMBA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+  :root{--ink:#0b1220;--muted:#56627a;--blue:#1f56d6;--line:#dfe5f0;--side:#05070d;--side-t:#c9d4ea}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#1a2035;font-family:Manrope,system-ui,sans-serif;color:var(--ink);padding:30px 16px}
+  .tools{max-width:210mm;margin:0 auto 16px;display:flex;gap:10px;justify-content:space-between;flex-wrap:wrap}
+  .tools a,.tools button{font:600 .9rem Manrope,sans-serif;padding:10px 18px;border-radius:999px;border:1px solid #3a4565;color:#fff;background:transparent;cursor:pointer;text-decoration:none}
+  .tools button{background:var(--blue);border-color:var(--blue)}
+  .page{width:210mm;min-height:297mm;margin:0 auto;background:#fff;display:grid;grid-template-columns:70mm 1fr;box-shadow:0 30px 80px -20px #000}
+  aside{background:var(--side);color:var(--side-t);padding:10mm 8mm 8mm}
+  .photo{width:44mm;aspect-ratio:1;border-radius:50%;object-fit:cover;border:3px solid var(--blue);margin:0 auto 4mm;display:block}
+  aside h3{font:500 .7rem "JetBrains Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:#6fb1ff;margin:5mm 0 2.4mm;padding-bottom:1.6mm;border-bottom:1px solid #1f2a44}
+  aside p,aside li{font-size:.75rem;line-height:1.5}
+  aside ul{list-style:none;display:grid;gap:1.6mm}
+  .c b{display:block;color:#fff;font-size:.75rem}
+  .sk{margin-bottom:1.8mm}
+  .sk span{display:flex;justify-content:space-between;font-size:.75rem}
+  .sk i{display:block;height:3px;border-radius:3px;background:#1f2a44;margin-top:1mm;overflow:hidden}
+  .sk i::after{content:"";display:block;height:100%;width:var(--w);background:linear-gradient(90deg,#3d8bff,#38e1ff)}
+  .chips{display:flex;flex-wrap:wrap;gap:1.4mm}
+  .chips span{font-size:.69rem;padding:1mm 2.4mm;border-radius:99px;border:1px solid #2a3a60;color:#dfe8ff}
+  main{padding:10mm 10mm 8mm}
+  h1{font-size:1.9rem;line-height:1;letter-spacing:-.03em;font-weight:800}
+  h1 em{font-family:"Instrument Serif",serif;font-weight:400;font-style:italic;color:var(--blue)}
+  .title{font-weight:600;color:var(--blue);margin:2mm 0 3mm;font-size:.9rem}
+  .intro{font-size:.78rem;color:var(--muted);line-height:1.5}
+  h2{font:500 .7rem "JetBrains Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin:5mm 0 2.5mm;display:flex;align-items:center;gap:3mm}
+  h2::after{content:"";flex:1;height:1px;background:var(--line)}
+  .job{margin-bottom:2.6mm;padding-left:4mm;border-left:2px solid var(--line)}
+  .job-h{display:flex;justify-content:space-between;gap:4mm;align-items:baseline}
+  .job b{font-size:.86rem}
+  .job .org{color:var(--blue);font-weight:600;font-size:.78rem}
+  .job time{font:.69rem "JetBrains Mono",monospace;color:var(--muted);white-space:nowrap}
+  .job p{font-size:.75rem;color:var(--muted);line-height:1.42;margin-top:.6mm}
+  .edu{display:grid;grid-template-columns:repeat(4,1fr);gap:2mm}
+  .edu div{border:1px solid var(--line);border-radius:3mm;padding:2.4mm}
+  .edu div.hl{border-color:var(--blue);background:#f2f6ff}
+  .edu time{font:.69rem "JetBrains Mono",monospace;color:var(--blue)}
+  .edu b{display:block;font-size:.75rem;line-height:1.25;margin:.8mm 0}
+  .edu span{font-size:.69rem;line-height:1.3;display:block;color:var(--muted)}
+  .projects{display:grid;gap:2.5mm}
+  .projects div{font-size:.75rem;color:var(--muted);line-height:1.45}
+  .projects b{color:var(--ink)}
+  @media print{
+    body{background:#fff;padding:0}
+    .tools{display:none}
+    .page{box-shadow:none;margin:0}
+    @page{size:A4;margin:0}
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  }
+  @media (max-width:820px){
+    .page{width:100%;min-height:0;grid-template-columns:1fr}
+    .photo{width:140px;margin-inline:auto}
+    main,aside{padding:24px 18px}
+    .edu{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<div class="tools">
+  <a href="index.html">← Retour au portfolio</a>
+  <button onclick="print()">Télécharger en PDF</button>
+</div>
+
+<article class="page">
+  <aside>
+    <img class="photo" src="img/monsieur-obi-hero.jpg" alt="Aige-Clei OBI MBOUMBA">
+    <h3>Contact</h3>
+    <ul class="c">
+      <li><b>Téléphone</b>+241 62 72 79 74<br>+241 77 79 80 78</li>
+      <li><b>E-mail</b>aigeclei@gmail.com</li>
+      <li><b>Adresse</b>Angondjé, Libreville — Gabon</li>
+    </ul>
+    <h3>Compétences</h3>
+    <div class="sk"><span>IA générative (Claude)</span><i style="--w:88%"></i></div>
+    <div class="sk"><span>Formation & leadership</span><i style="--w:86%"></i></div>
+    <div class="sk"><span>Montage & motion design</span><i style="--w:85%"></i></div>
+    <div class="sk"><span>Maintenance & réseaux</span><i style="--w:84%"></i></div>
+    <div class="sk"><span>Infographie & branding</span><i style="--w:82%"></i></div>
+    <div class="sk"><span>Marketing digital</span><i style="--w:80%"></i></div>
+    <div class="sk"><span>Développement web</span><i style="--w:75%"></i></div>
+    <h3>Outils</h3>
+    <div class="chips"><span>Claude</span><span>Claude Code</span><span>React</span><span>TypeScript</span><span>Tailwind</span><span>PWA</span><span>Docker</span><span>Git</span><span>Remotion</span><span>ffmpeg</span><span>Canva</span><span>Photoshop</span><span>Pack Office</span></div>
+    <h3>Langues</h3>
+    <ul><li>Français — courant</li><li>Anglais — intermédiaire</li></ul>
+    <h3>Centres d'intérêt</h3>
+    <p>IA, éducation numérique, entrepreneuriat, vidéo.</p>
+  </aside>
+
+  <main>
+    <h1>OBI MBOUMBA<br><em>Aige-Clei</em></h1>
+    <p class="title">Technicien informatique · Créateur de contenu tech · Intégrateur IA</p>
+    <p class="intro">Technicien informatique polyvalent depuis plus de 6 ans et CTO de la start-up Bradlss. J'intègre l'intelligence artificielle (Claude d'Anthropic) pour concevoir des applications web, produire des contenus vidéo pédagogiques et former au numérique. Dynamique, autonome et orienté résultats, je veux rendre la technologie utile et accessible au Gabon.</p>
+
+    <h2>Expérience professionnelle</h2>
+    <div class="job"><div class="job-h"><b>CTO · Chief Technology Officer <span class="org">· Bradlss Start-up</span></b><time>2022 — auj.</time></div>
+      <p>Pilotage de la stratégie technologique : choix des outils, infrastructure, développement des produits numériques et intégration de l'IA dans les processus.</p></div>
+    <div class="job"><div class="job-h"><b>Concepteur d'applications assisté par IA <span class="org">· Indépendant</span></b><time>2026 — auj.</time></div>
+      <p>Conception d'« École Gabon », une PWA hors ligne de gestion des écoles publiques (bulletins, absences, portail famille, documents générés par l'IA), et refonte du site de l'Université Numérique du Gabon.</p></div>
+    <div class="job"><div class="job-h"><b>Créateur de contenu & formateur <span class="org">· Informatique à l'école</span></b><time>2025 — auj.</time></div>
+      <p>Reels et tutoriels sur l'informatique et l'IA, montés en code (Remotion, ffmpeg) et diffusés sur TikTok, Facebook, LinkedIn et WhatsApp. Formations en informatique (attestations remises en août 2026).</p></div>
+    <div class="job"><div class="job-h"><b>Graphiste <span class="org">· Bradlss Start-up</span></b><time>2022 — 2023</time></div>
+      <p>Création des visuels, chartes, supports print et digitaux pour communiquer les offres de manière claire et attrayante.</p></div>
+    <div class="job"><div class="job-h"><b>Technicien de maintenance informatique <span class="org">· ALKIM IMMO / BTP</span></b><time>2021 — 2022</time></div>
+      <p>Maintenance du parc informatique : dépannage des ordinateurs, des réseaux et des logiciels, continuité des opérations.</p></div>
+
+    <h2>Formations & certifications</h2>
+    <div class="edu">
+      <div class="hl"><time>2026</time><b>4 badges Claude Academy</b><span>AI Fluency (students, educators), Claude 101…</span></div>
+      <div><time>2021 — 2022</time><b>Infographie (VAE)</b><span>Bradlss Start-up</span></div>
+      <div><time>2020 — 2022</time><b>Maintenance informatique (VAE)</b><span>Bradlss Start-up</span></div>
+      <div><time>2019 — 2020</time><b>Baccalauréat technologique</b><span>Lycée Paul Indjendje Ngondjou</span></div>
+    </div>
+
+    <h2>Réalisations récentes</h2>
+    <div class="projects">
+      <div><b>École Gabon</b> — application de gestion scolaire hors ligne (React, TypeScript, IndexedDB, Docker, API Claude).</div>
+      <div><b>Reels & tutoriels tech</b> — plus de 8 vidéos montées en code : IA locale, réviser avec l'IA, bureautique, entrepreneuriat.</div>
+      <div><b>Identités visuelles</b> — logo et charte de BUYAKOU BTP, supports print et réseaux sociaux.</div>
+    </div>
+  </main>
+</article>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monsieur Obi — Tech, IA & motion design</title>
+<meta name="description" content="Portfolio motion design d'Aige-Clei OBI MBOUMBA (Monsieur Obi) : CTO, créateur de contenu tech, intégrateur IA et formateur au Gabon.">
+<meta name="theme-color" content="#04060f">
+<meta property="og:title" content="Monsieur Obi — Tech, IA & motion design">
+<meta property="og:image" content="img/monsieur-obi-hero.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%2304060f'/><circle cx='32' cy='32' r='17' stroke='%233d8bff' stroke-width='6' fill='none'/><circle cx='32' cy='32' r='5' fill='%2338e1ff'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="loading">
+
+<!-- ============ CHARGEMENT ============ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-name" id="loaderName">
+    <span class="ln-word" data-text="MONSIEUR">MONSIEUR</span>
+    <span class="ln-word ln-blue" data-text="OBI">OBI</span>
+  </div>
+  <div class="loader-pct"><span id="pct">0</span><i>%</i></div>
+  <div class="loader-bar"><span id="bar"></span></div>
+  <p class="loader-txt mono" id="loaderTxt">Chargement des ressources…</p>
+</div>
+
+<canvas class="sky" id="sky" aria-hidden="true"></canvas>
+<div class="cursor-dot" id="cdot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cring" aria-hidden="true"></div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="nav">
+  <nav class="pill" id="pill">
+    <span class="pill-ind" id="pillInd"></span>
+    <a href="#accueil" data-sec="accueil">Accueil</a>
+    <a href="#apropos" data-sec="apropos">À propos</a>
+    <a href="#portfolio" data-sec="portfolio">Portfolio</a>
+    <a href="#reseaux" data-sec="reseaux">Réseaux</a>
+    <a href="#contact" data-sec="contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <!-- ============ ACCUEIL ============ -->
+  <section class="hero" id="accueil">
+    <div class="hero-text">
+      <p class="hero-hello mono"><span class="dot"></span> Disponible · Libreville, Gabon</p>
+      <h1 class="hero-title">
+        <span class="row"><span class="grad">Bienvenue chez</span></span>
+        <span class="row"><span>Monsieur Obi</span></span>
+      </h1>
+      <p class="hero-role"><span id="typed"></span><span class="caret"></span></p>
+      <p class="hero-desc">Tout a commencé par la curiosité, c'est devenu une passion. Technicien informatique depuis plus de 6 ans et CTO de la start-up Bradlss, je mets l'IA au service de l'éducation et des entreprises : applications, contenus vidéo et formations.</p>
+      <div class="hero-cta">
+        <a href="#portfolio" class="btn btn-blue magnetic">Voir mes projets <span>→</span></a>
+        <a href="#contact" class="btn btn-dark magnetic">Me contacter <span>↗</span></a>
+      </div>
+      <div class="findme">
+        <span class="mono">ME TROUVER</span>
+        <div class="findme-icons" id="heroSocial"></div>
+      </div>
+    </div>
+
+    <!-- Badge suspendu (physique) -->
+    <div class="lanyard" id="lanyard">
+      <svg class="strap" id="strap" aria-hidden="true"><path id="strapPath"/><path id="strapText" class="strap-dash"/></svg>
+      <div class="badge" id="badge" role="button" tabindex="0" aria-label="Badge de Monsieur Obi : glissez pour le balancer, cliquez pour le retourner">
+        <div class="badge-inner" id="badgeInner">
+          <div class="badge-face badge-front">
+            <span class="badge-clip"></span>
+            <div class="badge-top"><span class="mono">ID · 2026</span><span class="mono">GABON</span></div>
+            <div class="badge-big">MONSIEUR<br><b>OBI</b></div>
+            <div class="badge-photo"><img src="img/obi-badge.jpg" alt="" draggable="false"></div>
+            <div class="badge-name">AIGE-CLEI OBI MBOUMBA</div>
+            <div class="badge-foot"><span>CTO · CREATOR</span><span>PORTFOLIO</span></div>
+          </div>
+          <div class="badge-face badge-back">
+            <span class="badge-clip"></span>
+            <p class="mono badge-scan">SCANNEZ POUR ME CONTACTER</p>
+            <div class="badge-qr" id="qr"></div>
+            <p class="badge-back-name">Monsieur Obi</p>
+            <p class="mono badge-back-sub">wa.me · +241 62 72 79 74</p>
+          </div>
+        </div>
+      </div>
+      <p class="lanyard-hint mono">↖ attrapez le badge</p>
+    </div>
+  </section>
+
+  <!-- ============ À PROPOS ============ -->
+  <section class="about" id="apropos">
+    <h2 class="sec-title" data-title>À propos</h2>
+    <div class="about-grid wrap">
+      <div class="about-hi">
+        <p class="grad big-hi">Salut, moi c'est</p>
+        <p class="about-name">Aige-Clei<br>OBI MBOUMBA</p>
+        <a href="cv.html" class="btn btn-blue magnetic">Voir mon CV <span>↗</span></a>
+      </div>
+      <div class="reveal-photo" id="reveal">
+        <img class="rp-under" src="img/obi-creatif.jpg" alt="Aige-Clei, version créative">
+        <canvas class="rp-top" id="revealCanvas" aria-label="Aige-Clei OBI MBOUMBA"></canvas>
+        <span class="rp-hint mono">passez la souris ✦</span>
+      </div>
+      <div class="about-txt">
+        <p>Je suis <b>CTO de la start-up Bradlss</b> et créateur de la page <b>« Informatique à l'école »</b>. Je conçois des applications, je monte des vidéos en code et je forme au numérique.</p>
+        <p>Avec l'IA <b>Claude d'Anthropic</b>, je transforme des idées en outils concrets : intuitifs, rapides et utiles au Gabon.</p>
+        <a href="#portfolio" class="btn btn-ghost magnetic">‹/› Voir mes projets <span>↗</span></a>
+      </div>
+    </div>
+
+    <div class="wrap journey">
+      <div class="col">
+        <h3 class="col-title">Formation</h3>
+        <div class="list" id="eduList"></div>
+      </div>
+      <div class="col">
+        <h3 class="col-title">Expérience</h3>
+        <div class="list" id="expList"></div>
+      </div>
+    </div>
+
+    <div class="wrap stats" id="stats"></div>
+  </section>
+
+  <!-- ============ PORTFOLIO ============ -->
+  <section class="portfolio" id="portfolio">
+    <h2 class="sec-title" data-title>Portfolio</h2>
+    <div class="wrap">
+      <div class="tabs" id="tabs" role="tablist">
+        <span class="tab-ind" id="tabInd"></span>
+        <button role="tab" data-tab="projets" aria-selected="true">‹/› Projets</button>
+        <button role="tab" data-tab="certifs">✪ Certificats</button>
+        <button role="tab" data-tab="dossiers">▤ Compétences</button>
+        <button role="tab" data-tab="stack">◎ Tech stack</button>
+      </div>
+
+      <div class="panel" id="p-projets" role="tabpanel">
+        <div class="cards" id="projectCards"></div>
+      </div>
+      <div class="panel" id="p-certifs" role="tabpanel" hidden>
+        <div class="cards" id="certCards"></div>
+      </div>
+      <div class="panel" id="p-dossiers" role="tabpanel" hidden>
+        <div class="folders-wrap">
+          <div class="folders" id="folders" tabindex="0" aria-label="Dossiers de compétences : glissez, ou flèches gauche et droite"></div>
+          <div class="folder-ctrl">
+            <button class="round magnetic" id="fPrev" aria-label="Dossier précédent">←</button>
+            <span class="mono" id="fCount">01 / 07</span>
+            <button class="round magnetic" id="fNext" aria-label="Dossier suivant">→</button>
+          </div>
+          <p class="muted mono small center">Glissez les dossiers avec le doigt ou la souris</p>
+        </div>
+      </div>
+      <div class="panel" id="p-stack" role="tabpanel" hidden>
+        <div class="stack-grid" id="stackGrid"></div>
+      </div>
+      <div class="admin-bar" id="adminBar" hidden>
+        <span class="mono">Mode gestion</span>
+        <button class="btn btn-blue btn-sm" id="addWork">+ Ajouter un projet</button>
+        <button class="btn btn-dark btn-sm" id="addCert">+ Certification</button>
+        <button class="btn btn-dark btn-sm" id="exportBtn">Exporter</button>
+        <button class="btn btn-dark btn-sm" id="quitAdmin">Quitter</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RÉSEAUX ============ -->
+  <section class="social" id="reseaux">
+    <h2 class="sec-title" data-title>Mes réseaux</h2>
+    <div class="wrap">
+      <p class="muted center social-lead">Tutos, Reels et coulisses : voici mes vidéos publiées sur les réseaux.</p>
+    </div>
+    <div class="reels" id="reels"></div>
+    <p class="muted mono small center">← glissez →</p>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <h2 class="sec-title" data-title>Contactez-moi</h2>
+    <div class="wrap contact-grid">
+      <div class="glass contact-form-card">
+        <h3 class="grad">Parlons-en</h3>
+        <p class="muted small">Un projet, une formation, une idée ? Écrivez-moi directement.</p>
+        <form id="projectForm" class="contact-form">
+          <p class="mono small">TYPE DE PROJET</p>
+          <div class="choices" data-name="type">
+            <button type="button">Application web</button><button type="button">Site vitrine</button><button type="button">Motion design</button>
+            <button type="button">Intégration IA</button><button type="button">Branding</button><button type="button">Formation</button>
+          </div>
+          <label class="field"><span class="mono small">NOM</span><input name="nom" autocomplete="name" placeholder="Votre nom"></label>
+          <label class="field"><span class="mono small">MESSAGE</span><textarea name="msg" rows="4" placeholder="Votre message…"></textarea></label>
+          <button class="btn btn-blue full" type="submit">➤ Envoyer sur WhatsApp</button>
+          <a class="small muted center" id="mailLink">ou par e-mail</a>
+        </form>
+      </div>
+      <div class="glass findme-card">
+        <h3>Me trouver</h3>
+        <div class="find-list" id="findList"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot-marquee" aria-hidden="true"><div class="foot-track" id="footTrack"></div></div>
+  <div class="wrap foot-row">
+    <span class="muted small">© <span id="year"></span> Aige-Clei OBI MBOUMBA · Libreville, Gabon</span>
+    <button class="linkish small muted" id="openAdmin">Gérer</button>
+  </div>
+</footer>
+
+<a class="wa-float magnetic" id="waFloat" target="_blank" rel="noopener" aria-label="WhatsApp"></a>
+
+<dialog class="modal" id="viewer">
+  <button class="modal-x" data-close aria-label="Fermer">✕</button>
+  <div class="viewer" id="viewerBody"></div>
+</dialog>
+
+<dialog class="modal modal-form" id="uploadDlg">
+  <button class="modal-x" data-close aria-label="Fermer">✕</button>
+  <form id="uploadForm" method="dialog">
+    <h3>Ajouter un projet</h3>
+    <label class="field"><span class="mono small">TITRE *</span><input name="titre" required></label>
+    <label class="field"><span class="mono small">CATÉGORIE</span>
+      <select name="categorie"><option>Web & Apps</option><option>Intelligence artificielle</option><option>Mobile</option><option>Branding</option><option>Motion design</option><option>Formation</option></select></label>
+    <label class="field"><span class="mono small">DESCRIPTION</span><textarea name="description" rows="3"></textarea></label>
+    <label class="field"><span class="mono small">VISUEL (image, vidéo ou PDF)</span><input type="file" name="fichier" accept="image/*,video/*,application/pdf"></label>
+    <label class="field"><span class="mono small">LIEN VERS LE PROJET</span><input name="lien" type="url" placeholder="https://"></label>
+    <button class="btn btn-blue" type="submit">Ajouter au portfolio</button>
+  </form>
+</dialog>
+
+<dialog class="modal modal-form" id="certDlg">
+  <button class="modal-x" data-close aria-label="Fermer">✕</button>
+  <form id="certForm" method="dialog">
+    <h3>Ajouter une certification</h3>
+    <label class="field"><span class="mono small">INTITULÉ *</span><input name="titre" required placeholder="ex. Claude Code in Action"></label>
+    <label class="field"><span class="mono small">ÉMETTEUR</span><input name="emetteur" value="Anthropic"></label>
+    <label class="field"><span class="mono small">DATE</span><input name="date" value="2026"></label>
+    <label class="field"><span class="mono small">LIEN DE VÉRIFICATION</span><input name="url" type="url" placeholder="https://"></label>
+    <button class="btn btn-blue" type="submit">Ajouter</button>
+  </form>
+</dialog>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
